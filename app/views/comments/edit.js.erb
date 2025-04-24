@@ -1,0 +1,4 @@
+$("#<%= dom_id(@comment) %>").replaceWith(
+  <!--"<%#= j render 'comments/comment', comment: @comment %>"-->
+  $("<%= j(render 'comments/form', comment: @comment) %>")
+  );
