@@ -25,7 +25,7 @@
 
       <div class="card-body">
         <div class="mb-3 d-flex justify-content-between">
-          <div id = "like_<%= photo.id %>">
+          <div>
             <%= render "photos/likes", photo: photo %>
           </div>
             <%= render "follow_requests/follow_unfollow", sender: current_user, recipient: photo.owner %>

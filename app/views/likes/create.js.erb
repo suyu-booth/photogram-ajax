@@ -1,0 +1,4 @@
+$("#<%= dom_id(@like.photo) %>_new_like_form").replaceWith(
+  "<%= j(link_to @like, class: "btn btn-link link-underline-dark link-underline-opacity-0 link-underline-opacity-100-hover", method: :delete, remote: true do <i class="fas fa-heart fa-fw"></i>
+          Un-like end)>"
+);
